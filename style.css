@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,html {
+  background: linear-gradient(to right, #001a5d, #1d4da5, #001a5d);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  box-shadow: 0px -4px 12px #00e1ff;
+  background-color: #001a5d ;
+  height: 120px;
+  width: 100%;
+  border-radius: 12px;
+}
+img {
+  width: 118px;
+}
+main{
+  position: relative; 
+  background-color: #000000;
+  z-index: 10;
+  padding: 20px;
+  border: 20px;
+  border-color: rgb(255, 255, 255);
+  text-align: center;
+  width: 550px;
+  margin: 100px auto;
+  box-shadow: 0px -4px 12px #00e1ff;
+border-radius: 20px;
+border: 5px solid #0077ff;
+
+}
+button {
+ background-color: #001a5d;
+  color: white;
+  font-size: 18px;
+  border-radius: 15px;
+  width: 280px;
+  height: 50px;
+  margin: 10px 0;
+  border: none;
+  box-shadow: 0 4px 10px #00e1ff;
+  cursor: pointer;
+  border: 2px solid #0062ff;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+button:hover {
+  background-color: #00aaff;
+  color: #ffffff;
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px #ffffff;
+}
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  text-shadow: 0 0px 6px #0095ff;
+}
+a {
+  text-decoration: none;
+  color: #8fcef8;
+}
+a:hover{
+  color: #001a5d;
+}
+label {
+  font-weight: bold;
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #7ac4fd;
+  text-align: left;
+}
+input {
+  background-color: #7ac4fd;
+  width: 500px;
+  height: 35px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 2px solid #00a2ff;
+  margin: 10px 0;
+  transition: background-color 0.3s, transform 0.2s;
+}
+input::placeholder {
+  color: #001a5d; 
+  opacity: 1; 
+}
+input:hover{
+  background-color: #d0f4ff;
+  color: #001a5d;
+  transform: scale(1.03);
+}
+#res {
+  background: linear-gradient(135deg, #004e92, #000428);
+  color: #00ffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  word-wrap: break-word;
+}
+#res2 {
+  background: linear-gradient(135deg, #003366, #001f4d);
+  color: #66ccff;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 0 10px #00e1ff;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  word-wrap: break-word;
+}
+#res:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+#res2:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+.link-inicial {
+  position: fixed;
+  top: 10px;
+  right: 200px;
+  margin-top: 20px; 
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+div{
+  color: #ffffff;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #001a5d;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+  border-top: 3px solid #0077ff;
+  box-shadow: 0px -4px 12px #00e1ff;
+  z-index: 1000;
+  border-radius: 12px 12px 0 0;
+}
+.link-inicial:first-child {
+  right: 70px;
+}
+.link-inicial:last-child {
+  right: 20px; 
+}
+.link-inicial:hover {
+  color: #0099ff;
+}
+.menu-container {
+  margin-top: 9px;
+  position: fixed;
+  top: 10px;
+  right: 120px; 
+  cursor: pointer;
+}
+.menu-icon {
+  font-size: 40px;
+  color: white;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px;
+  user-select: none;
+  transition: color 0.3s;
+}
+.menu-icon:hover {
+  color: #58d0ff;
+}
+.menu-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #000000;
+  border: 2px solid #0099ff;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  min-width: 150px;
+  z-index: 1000;
+}
+.menu-container:hover .menu-links {
+  display: flex;
+}
+.menu-links a {
+  color: #1a8cd8;
+  font-weight: bold;
+  margin: 5px 0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+.menu-links a:hover {
+  background-color: #58d0ff;
+  color: white;
+  border-radius: 8px;
+}

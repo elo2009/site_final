@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="atualizar.saida.js" defer></script>
+    <title>Atualizar Saída</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<div>
+    <Header>
+        <img src="img.jpg" alt="Sesi e senai" > 
+    </Header> 
+</div>
+    <a href="inicial.html" class="link-inicial">
+        <i class="fas fa-home"></i>
+      </a>
+      <div class="menu-container">
+        <div class="menu-icon">☰</div>
+        <div class="menu-links">
+            <a href="saida.html">Saída</a>
+            <a href="professor.html">Professor</a>
+            <a href="aluno.html">Aluno</a>
+            <a href="fila.html">Fila virtual</a>
+            <a href="cadastro.saida.html">Cadastrar</a>
+            <a href="listar.saida.html">Listar</a>
+            <a href="consultar.saida.html">Consultar</a>
+            <a href="atualizar.saida.html">Atualizar</a>
+            <a href="apagar.saida.html">Apagar</a>
+        </div>
+      </div>
+<body>
+    <br><br>
+    <h1>Atualizar dados da saída</h1>
+    <main>
+        
+            <label for="id">Digite o código de identificação:</label>
+            <input type="text" id="id" placeholder="Código da saída...">
+
+            <button id="consultar">Consultar</button>
+            <div id="res2"></div>
+        <br><br><br><br>
+
+
+        <label for="dataSolicitacao">Data de solicitação:</label>
+        <input type="date" id="dataSolicitacao" placeholder="Dia do pedido da saída...">
+        <br><br>
+
+        <label for="horaSaida">Horário da saída:</label>
+        <input type="time" id="horaSaida" placeholder="Horario que o aluno saiu...">
+        <br><br>
+
+        <label for="horaRetorno">Horário do retorno:</label>
+        <input type="time" id="horaRetorno" placeholder="Horario que o aluno retornou...">
+        <br><br>
+
+        <label for="motivo">Motivo da saida:</label>
+        <input type="text" id="motivo" placeholder="Motivo da saída...">
+        <br><br>
+
+        <label for="localDestino">Local do destino:</label>
+        <input type="text" id="localDestino" placeholder="Local onde o aluno irá...">
+
+        <label for="status">Status:</label>
+        <input type="text" id="status" placeholder="Status...">
+
+        <label for="nomeAluno">Nome do aluno:</label>
+        <input type="text" id="nomeAluno" placeholder="Nome do aluno que irá sair...">
+
+        <label for="nomeProfessor">Nome do professor:</label>
+        <input type="text" id="nomeProfessor" placeholder="Nome do professor responsável...">
+
+        <label for="aluno_id">Código do aluno:</label>
+        <input type="text" id="aluno_id" placeholder="Código de identificação do aluno...">
+
+        <label for="professor_id">Código do professor:</label>
+        <input type="text" id="professor_id" placeholder="Código de identificação do Professor...">
+        <br><br><br>
+
+        <button id="atualizar">Atualizar</button>
+        <br>
+        <div><div id="res"></div></div>
+    </main>
+    <br><br><br>
+    <footer>
+        <p>© 2025 - Atualizar os dados das saídas | Desenvolvido por Eloisa</p>
+      </footer>
+</body>
+</html>
